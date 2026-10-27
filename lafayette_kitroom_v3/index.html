@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160d2b">
+  <meta name="description" content="Explore the Lafayette International High School varsity soccer kit concept and customize a jersey name and number.">
+  <title>Lafayette Soccer — Kit Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span>BUFFALO, NEW YORK</span><span>VARSITY SOCCER · KIT CONCEPT 2027</span></div>
+  <header class="nav wrap">
+    <a class="brand" href="#top" aria-label="Lafayette Soccer home"><img src="assets/school-logo.gif" alt="Lafayette school logo"><span>LAFAYETTE<small>INTERNATIONAL HIGH SCHOOL</small></span></a>
+    <nav><a href="#kits">THE KITS</a><a href="#customize">CUSTOMIZER</a><a href="#story">OUR STORY</a></nav>
+    <a class="nav-cta" href="#customize">BUILD YOUR KIT <span>↗</span></a>
+  </header>
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy"><p class="eyebrow"><span class="dot"></span> THE NEXT GENERATION OF LAFAYETTE</p>
+        <h1>MADE FOR<br><em>THE CREST.</em></h1>
+        <p class="hero-text">A fresh vision for Lafayette Varsity Soccer. Explore the proposed home and away kits, then make the shirt yours with a custom name and number.</p>
+        <div class="hero-actions"><a class="button primary" href="#customize">CUSTOMIZE YOUR JERSEY <span>↘</span></a><a class="text-link" href="#kits">EXPLORE THE COLLECTION <span>→</span></a></div>
+        <div class="hero-foot"><span>01 / HOME & AWAY</span><span>DESIGN CONCEPT · NOT OFFICIAL MERCHANDISE</span></div>
+      </div>
+      <div class="hero-visual"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-tag tag-top">LHS <b>·</b> 2027</div>
+        <div class="hero-jersey" id="heroJersey" aria-label="Illustration of a purple Lafayette soccer jersey"></div>
+        <div class="hero-tag tag-bottom"><span>VARSITY</span><b>SOCCER</b></div><div class="hero-index">LAF / 027</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Team values"><div>ONE SCHOOL <b>✳</b> ONE CREST <b>✳</b> ONE TEAM <b>✳</b> LAFAYETTE SOCCER <b>✳</b> ONE SCHOOL <b>✳</b> ONE CREST <b>✳</b> ONE TEAM <b>✳</b></div></section>
+
+    <section class="kits-section wrap" id="kits">
+      <div class="section-head"><div><p class="eyebrow">01 / THE COLLECTION</p><h2>TWO COLORS.<br><em>ONE IDENTITY.</em></h2></div><p class="section-note">Designed around Lafayette purple, sharp contrast, and a clean modern match-day silhouette.</p></div>
+      <div class="kit-cards">
+        <button class="kit-card home-card" data-kit="home" type="button"><div class="kit-card-top"><span>01 — HOME</span><span>LIGHT / PURPLE</span></div><div class="card-jersey" id="homeCardJersey"></div><div class="kit-card-bottom"><span><b>THE HOME KIT</b><small>White base · Lafayette purple</small></span><span class="circle-arrow">↗</span></div></button>
+        <button class="kit-card away-card" data-kit="away" type="button"><div class="kit-card-top"><span>02 — AWAY</span><span>PURPLE / WHITE</span></div><div class="card-jersey" id="awayCardJersey"></div><div class="kit-card-bottom"><span><b>THE AWAY KIT</b><small>Deep purple · angular pattern</small></span><span class="circle-arrow">↗</span></div></button>
+      </div>
+    </section>
+
+    <section class="customizer-section" id="customize"><div class="wrap custom-layout">
+      <div class="custom-copy"><p class="eyebrow"><span class="dot"></span> 02 / YOUR PLAYER ID</p><h2>PUT YOUR<br><em>NAME ON IT.</em></h2><p>Choose your colorway, enter a name and squad number, and switch between the front and back. The preview updates as you type.</p>
+        <div class="custom-note"><span class="note-icon">✳</span><span><b>LIVE PREVIEW</b><small>Your name and number update instantly. This is a visual concept, not an order or official team uniform.</small></span></div>
+        <div class="number-presets"><span>POPULAR NUMBERS</span><div><button type="button" data-number="7">07</button><button type="button" data-number="10">10</button><button type="button" data-number="11">11</button><button type="button" data-number="17">17</button></div></div>
+      </div>
+      <div class="customizer">
+        <div class="preview-head"><span><span class="live-dot"></span> KIT LAB / LIVE</span><span id="previewKitLabel">AWAY KIT · 02</span></div>
+        <div class="preview-stage" id="previewStage"><div class="stage-grid"></div><div class="stage-label label-left">FRONT / BACK</div><div class="stage-label label-right">DRAG TO ROTATE</div><div class="preview-shirt" id="previewShirt" tabindex="0" role="img" aria-label="Interactive jersey preview. Use the front and back controls to change view."></div><div class="stage-bottom"><span>LAFAYETTE<br><b>INTERNATIONAL</b></span><span id="stageNumber">03</span></div></div>
+        <div class="view-switch"><button class="view-btn active" type="button" data-view="front">FRONT</button><button class="view-btn" type="button" data-view="back">BACK</button><span class="view-hint">↔ DRAG THE SHIRT</span></div>
+        <div class="controls">
+          <div class="control-row"><label>COLORWAY</label><div class="swatches"><button type="button" class="swatch purple selected" data-kit="away" aria-label="Purple away kit" title="Purple away kit"></button><button type="button" class="swatch white" data-kit="home" aria-label="White home kit" title="White home kit"></button></div></div>
+          <div class="control-row input-row"><label for="playerName">PLAYER NAME</label><div class="field-wrap"><input id="playerName" maxlength="14" type="text" value="LAFAYETTE" placeholder="ENTER NAME" autocomplete="off"><span id="nameCount">9 / 14</span></div></div>
+          <div class="control-row input-row"><label for="playerNumber">SQUAD NUMBER</label><div class="number-field"><button type="button" id="minusNumber" aria-label="Decrease number">−</button><input id="playerNumber" type="number" min="0" max="99" value="3" inputmode="numeric" aria-label="Squad number"><button type="button" id="plusNumber" aria-label="Increase number">+</button></div></div>
+          <button type="button" class="reset-btn" id="resetCustomizer">↺ RESET DESIGN</button>
+        </div>
+        <div class="custom-footer"><span>CONCEPT DESIGN · LAFAYETTE VARSITY SOCCER</span><button id="savePreview" type="button">SAVE PREVIEW ↗</button></div>
+      </div>
+    </div></section>
+
+    <section class="story-section wrap" id="story"><div class="story-heading"><p class="eyebrow">03 / BEHIND THE CREST</p><h2>MORE THAN<br><em>A MATCH KIT.</em></h2></div><div class="story-content"><p class="story-lead">A visual proposal built around school pride, team identity, and a new chapter for Lafayette soccer.</p><p>This fan-made concept is intended to help students, players, families, coaches, and school leaders explore a possible future design. It is not an official school announcement or an approved uniform.</p><a class="text-link" href="https://fan.hudl.com/usa/ny/buffalo/organization/164476/lafayette-high-school/watch?hr=SGlnaGxpZ2h0UmVlbFN1bW1hcnk2YWI3MzAxMTRjMzdiZDk4OTFiZWZjZDE%3D&ot=TEAM&oi=628044&shared=true" target="_blank" rel="noopener">WATCH LAFAYETTE HIGHLIGHTS <span>↗</span></a></div></section>
+    <section class="gallery wrap"><div class="gallery-head"><p class="eyebrow">04 / MATCH-DAY ENERGY</p><span>THE PEOPLE BEHIND THE PURPLE</span></div><div class="gallery-grid"><figure class="gallery-main"><img src="assets/player-match-photo.png" alt="Lafayette soccer match-day photo" loading="lazy"><figcaption>THE GAME / 01</figcaption></figure><figure><img src="assets/team-photo.png" alt="Lafayette soccer team photo" loading="lazy"><figcaption>THE TEAM / 02</figcaption></figure></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><a class="brand footer-brand" href="#top"><img src="assets/school-logo.gif" alt=""><span>LAFAYETTE<small>VARSITY SOCCER</small></span></a><p>UNOFFICIAL KIT DESIGN CONCEPT · CREATED FOR SHOWCASE PURPOSES</p><a href="#top" class="back-top">BACK TO TOP ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
